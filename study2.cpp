@@ -1,5 +1,5 @@
 /***********************
-* 7/11
+* 7/16
 ***********************/
 
 // 求最大回文串长度 Mancher算法
@@ -19,7 +19,7 @@ public:
 			return 0;
 		char mancherstr = MancherString(s); // 生成回文串
 		vector<int> v; // 存储每个位置的回文半径
-		v.reserve(mancherstr.size());
+		v.resize(mancherstr.size());
 		int C = -1;  // 回文中心
  		int R = -1;  // 最大回文右边界
 		int max = -1; // 最大回文长度
